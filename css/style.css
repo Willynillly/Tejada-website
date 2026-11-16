@@ -18,12 +18,17 @@ body{
 
 .hero{
     position: relative;
-    text-align: center;
-    padding: 100px 20px;
+    text-align:center;
     overflow: hidden;
-    background-image: url("images/Antequarian bookstore.png");
-    background-size: cover;
+    background-image: url("../images/Antequarian_bookstore.png");
+    background-size: contain;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-color: #f8f4ef;
 }
 h1 {
   font-family: "Ballet", cursive;
