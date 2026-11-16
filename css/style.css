@@ -3,27 +3,25 @@
   padding: 0;
   margin: 0;
 }
-
 body{
   background-color: #f1d7b5;
   font-family: "Playfair Display";
 
 }
-.hero_content{
-    background: linear-gradient(#3e003e, #6e006e);
+.logo {
+    background-color: linear-gradient(#3e003e, #6e006e);
     color: gold;
     text-align: center;
     border-bottom: 2px solid gold;
     ;
 }
-
 h1 {
   font-family: "Ballet", cursive;
   font-weight: 10;
   font-style: normal;
   font-size: 70px; 
   margin: 0;
-  text-shadow: 2px 0 #00000066;
+  text-shadow: 2px 0 rgba(0, 0, 0, 0.4);
 }
 .tagline{
   padding-bottom: 15px;
@@ -32,7 +30,7 @@ h1 {
   text-shadow: 10px;
 }
 nav {
-    background-color: #3d004d;
+    background-color: rgb(61, 0, 77);
     gap: 50px;
     font-style: normal;
     position: sticky;
@@ -60,4 +58,194 @@ h2 {
     text-underline-offset: 10px;
     text-align: center;
     padding: 50px;
+}
+
+.book-details, .info-card, .contact-form{
+    background-color:#FFEDD7;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px #2b1d1440;
+    display: flex;          /* puts the image and the text side by side */
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.book-details img{
+    width: 220px;
+    height: 300px;
+    object-fit: cover;      /* keeps the picture from stretching */
+    border-radius: 15px;
+    background-color: #e0c9a6;
+    flex-shrink: 0;
+}
+
+.book-text{
+    flex: 1;
+}
+
+.book-details p{
+  color: #5a5a5a;
+  margin-top: 6px;
+}
+.book-details p strong{
+  color: black;
+}
+
+button{
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 8px 18px;
+}
+#clearFilters{
+    background-color: transparent;
+    color: rgb(61, 0, 77);
+    border: 1px solid rgb(61, 0, 77);
+}
+.add-btn{
+    margin-top: 12px;
+    background-color: rgb(61, 0, 77);
+    color: #f1d7b5;
+    border: none;
+}
+.add-btn:hover,
+.pay-btn:hover{
+    background-color: rgb(110, 0, 110);
+    color: gold;
+}
+.more-btn{
+    display: block;
+    margin: 25px auto;
+    background-color: rgb(61, 0, 77);
+    color: gold;
+    padding: 10px 30px;
+}
+.more-btn:hover{
+    background-color: rgb(110, 0, 110);
+}
+
+.menu-item{
+    /* background-color:#FFEDD7;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px #2b1d1440; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.menu-item:nth-child(even){
+    flex-direction: row-reverse;   /* every second item flips: text left, picture right */
+    text-align: right;
+}
+.menu-item img{
+    width: 240px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: #e0c9a6;
+    flex-shrink: 0;
+}
+.menu-text{
+    flex: 1;
+}
+.taste{
+    color: #5a5a5a;
+    font-style: italic;
+    margin-top: 6px;
+}
+.menu-price{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4b2600;
+    font-size: 20px;
+}
+
+.abt {
+  text-align: center;
+}
+
+.box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;                             
+  margin: 20px 0;
+}
+.care {
+  background-color:#FFEDD7;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px #2b1d1440;
+  gap: 25px;
+  text-align: center;
+}
+
+.contact-grid { 
+  display: grid; 
+  grid-template-columns: 1fr 1.3fr; 
+  gap: 1.6rem; margin-top: 1.4rem; 
+}
+.contact-info { 
+  background: var(--paper); 
+  border: 1px solid var(--parchment-dark); 
+  border-radius: var(--radius); 
+  padding: 1.2rem; 
+}
+.contact-info p { 
+  margin: 0 0 0.7rem; }
+
+.contact-form {
+  display: grid;
+  gap: 0.8rem;
+  padding: 1.2rem;
+}
+
+.contact-form .btn { 
+  justify-self: start; 
+}
+
+.form-status {
+   margin: 0.4rem 0 0; 
+   min-height: 1.2em; 
+   font-size: 0.9rem; }
+
+#cartList{
+    list-style: none;
+    color: #5a5a5a;
+}
+#cartList li{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 8px 0;
+    border-bottom: 1px solid #d8bf9a;
+}
+#cartList button{
+    background: none;
+    border: none;
+    color: rgb(110, 0, 110);
+    text-decoration: underline;
+    padding: 0 5px;
+}
+.total{
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start
+}
+.info-card label{
+    display: block;
+    margin-top: 12px;
+}
+.info-card input[type="radio"], [type="text"]{
+    margin-right: 6px;
 }
