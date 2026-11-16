@@ -9,11 +9,21 @@ body{
 
 }
 .logo {
-    background-color: linear-gradient(#3e003e, #6e006e);
+    background: linear-gradient(#3e003e, #6e006e);
     color: gold;
     text-align: center;
     border-bottom: 2px solid gold;
     ;
+}
+
+.hero{
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    overflow: hidden;
+    background-image: url("images/Antequarian bookstore.png");
+    background-size: cover;
+    background-position: center;
 }
 h1 {
   font-family: "Ballet", cursive;
@@ -21,7 +31,7 @@ h1 {
   font-style: normal;
   font-size: 70px; 
   margin: 0;
-  text-shadow: 2px 0 rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 0 #00000066;
 }
 .tagline{
   padding-bottom: 15px;
@@ -30,7 +40,7 @@ h1 {
   text-shadow: 10px;
 }
 nav {
-    background-color: rgb(61, 0, 77);
+    background-color: #3d004d;
     gap: 50px;
     font-style: normal;
     position: sticky;
@@ -54,7 +64,7 @@ nav a:hover {
 
 h2 {
     color: #2b1d14;
-    text-decoration: underline 1px solid rgb(115, 46, 19);
+    text-decoration: underline 1px solid #732e13;
     text-underline-offset: 10px;
     text-align: center;
     padding: 50px;
@@ -89,7 +99,7 @@ h2 {
   margin-top: 6px;
 }
 .book-details p strong{
-  color: black;
+  color: #000000;
 }
 
 button{
@@ -99,27 +109,23 @@ button{
     border-radius: 20px;
     padding: 8px 18px;
 }
-#clearFilters{
-    background-color: transparent;
-    color: rgb(61, 0, 77);
-    border: 1px solid rgb(61, 0, 77);
-}
+
 .add-btn{
     margin-top: 12px;
-    background-color: rgb(61, 0, 77);
+    background-color: #3d004d;
     color: #f1d7b5;
     border: none;
 }
 .add-btn:hover,
 .pay-btn:hover{
-    background-color: rgb(110, 0, 110);
+    background-color: #6e006e;
     color: gold;
 }
 .more-btn{
     display: block;
     margin: 25px auto;
-    background-color: rgb(61, 0, 77);
-    color: gold;
+    background-color: #3d004d;
+    color: #ffd700;
     padding: 10px 30px;
 }
 .more-btn:hover{
